@@ -1,0 +1,552 @@
+/* FONTS */
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+
+
+
+
+
+/* GERAL */
+body {
+    color: #7c8081;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    line-height: 1.75em;
+
+    background-image: url(../img/header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.btn-primary {
+    background: linear-gradient(180deg, #f0ac4b, #eb9317);
+    border-color: #eb9317;
+}
+.btn-primary:hover {
+    background: #eb9317;
+    border-color: #eb9317;
+}
+.btn-primary:focus {
+    border-color: #eb9317;
+}
+.btn:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/* MODAL */
+.modal-content {
+    overflow: hidden;
+}
+.modal-header {
+    background-color: #eb9317;
+}
+.modal-header h4 {
+    color: white;
+}
+.modal-header .close {
+    color: white;
+    opacity: 0.8;
+}
+.modal-header .close:hover {
+    opacity: 1;
+}
+.modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* CABEÇALHO */
+header .navbar-default {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 20px 10px 0 0;
+    margin: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s, padding 0.3s;
+}
+header .navbar-brand {
+    color: #262324 !important;
+    display: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: -5px 0 -10px 0;
+}
+header nav .links a {
+    text-transform: uppercase;
+    color: #353535 !important;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding: 10px 10px;
+    margin: 0 0 0 20px;
+    border: 1px solid transparent;
+}
+header nav .links a:hover {
+    background-color: #fafafa !important;
+    border-color: #ddd;
+}
+header nav .links .btn-primary {
+    color: white !important;
+    text-transform: uppercase;
+}
+header nav .links .btn-primary:hover {
+    background-color: #eb9317 !important;
+    border-color: transparent;
+}
+header nav .links .telefone {
+    color: #000;
+    font-weight: 400;
+    padding: 8px 0 0 20px;
+    /*font-size: 1.5em;*/
+}
+/* HEADER PEQUENO */
+header nav.scrolled {
+    padding: 10px 10px 10px 0;
+    background-color: white;
+    border-radius: 0;
+    border-bottom: 7px solid #f8e78d;
+}
+header nav.scrolled .navbar-brand { display: block; }
+
+
+
+
+
+
+
+/* ARTICLE/SECTIONS */
+article {
+    border-radius: 10px;
+    background-image: url(../img/body-bg.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+section {
+    padding: 100px 0;
+}
+section h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 100px auto;
+}
+section h2 {
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+}
+section p {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/* COVER */
+#cover {
+    display: table;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+#cover h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#cover h1 img {
+    width: 250px;
+}
+#cover .next {
+    position: absolute;
+    color: #eb9317;
+    font-size: 6em;
+    left: 50%;
+    bottom: 20px;
+    margin: 0 0 0 -30px;
+}
+#cover .next:hover {
+    color: #db8307;
+}
+
+
+
+
+
+/* EMPRESA */
+#empresa {
+    color: #777;
+    text-align: center;
+    padding: 80px 0 0 0;
+    margin-top: -80px;
+}
+#empresa .carousel {
+    max-height: 85vh;
+    border: 20px solid #f5f4ee;
+}
+#empresa .carousel .carousel-control { opacity: 0; transition: opacity 0.3s; }
+#empresa .carousel .carousel-control:hover { opacity: 0.5; }
+#empresa .carousel .carousel-indicators-group {
+    z-index: 10000;
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+#empresa .carousel .carousel-indicators-group .carousel-indicators {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    top: 3px;
+    left: 0;
+}
+#empresa .carousel .carousel-indicators-group .btn-group {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    opacity: 0.9;
+}
+#empresa .carousel .carousel-caption {
+    margin-bottom: 20px;
+}
+#empresa .carousel p {
+    font-size: 1.2em;
+    text-shadow: 0 0 2px black;
+}
+
+
+
+
+
+
+/* SERVICOS */
+#servicos {
+    position: relative;
+    padding: 100px 50px 30px 50px;
+    background-color: #f5f4ee;
+}
+#servicos h1 {
+    color: #000;
+    margin-bottom: 150px;
+}
+#servicos .service {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    clear: both;
+    color: #777;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e6ddb9;
+}
+#servicos .service .image {
+    width: 150px;
+    height: 150px;
+    margin: 0 0 75px 0;
+    border-radius: 75px;
+    border: 8px solid #e6ddb9;
+    overflow: hidden;
+}
+#servicos .service .image img {
+    width: auto;
+    height: 100%;
+}
+#servicos .service .content {
+    position: relative;
+}
+#servicos .service h2 {
+    color: #333;
+    font-weight: bold;
+}
+#servicos .service p {
+    line-height: 1.7em;
+}
+#servicos .service:last-child {
+    height: 100px;
+}
+#servicos .service:nth-child(even) {
+    text-align: right;
+    border-right-width: 2px;
+}
+#servicos .service:nth-child(even) .image { float: right; margin-right: -75px }
+#servicos .service:nth-child(even) .content { margin: -20px 110px 0 0; }
+#servicos .service:nth-child(odd) {
+    float: right;
+    border-left-width: 2px;
+}
+#servicos .service:nth-child(odd) .image { float: left;  margin-left: -75px }
+#servicos .service:nth-child(odd) .content { margin: -15px 0 0 110px; }
+/* ajustes isolados */
+.seguranca-trabalho .content {
+    top: -30px;
+}
+.solucoes-ambientais .content {
+    top: -45px;
+}
+/* FOLDERS */
+.folders {
+    border-top: 2px dotted #e6ddb9;
+}
+.folders h2 {
+    text-align: center;
+    color: #8c755e;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 40px 0 40px 0;
+}
+.folders .btn-link {
+    font-size: 1.2em;
+    color: #8c755e;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* TREINAMENTOS */
+#treinamentos {
+    color: #000;
+    text-align: center;
+    border-top: 8px solid #f8e78d;
+    background-color: rgba(250,250,250,0.9);
+    padding: 100px 50px;
+    margin: 0 0 -10px 0;
+}
+#treinamentos h1 {;
+    margin-bottom: 50px;
+}
+#treinamentos h2 {;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#treinamentos p {
+    margin-bottom: 25px;
+}
+#treinamentos dl {
+    text-align: left;
+}
+#treinamentos dl dt {
+    margin-top: 50px;
+}
+#treinamentos dl dd {
+    line-height: 2em;
+}
+#treinamentos dl dd ul {
+    padding-left: 15px;
+}
+#treinamentos img {
+    display: inline-block;
+    margin: 0 30px -25px 0;
+}
+#treinamentos .btn {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 20px 30px;
+}
+.treinamento-presencial {
+    padding-right: 40px;
+    border-right: 2px solid #f8e78d;
+}
+.treinamento-distancia {
+    padding-left: 40px
+}
+
+
+
+/* GALERIA */
+#galeria {
+    padding: 100px 30px 0;
+    background-color: #99ac59;
+    background-color: #f8e78d;
+}
+#galeria h1 { color: #000; margin-bottom: 50px; }
+#galeria .list {
+    font-size: 0;
+}
+#galeria .list div {
+    margin-bottom: 25px;
+}
+#galeria a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+#galeria a img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s, opacity 0.1s;
+}
+#galeria a p {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: bottom 0.2s, opacity 0.2s;
+}
+#galeria a:hover img {
+    transform: scale(1.05, 1.05);
+    opacity: 0.6;
+}
+#galeria a:hover p {
+    bottom: 0;
+    opacity: 1;
+}
+
+
+
+/* CONTATO */
+#contato {
+    color: white;
+    background-color: #333;
+    padding: 100px 100px 50px 100px;
+}
+#contato h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+/* form */
+#contato .input-group {
+    margin-bottom: 30px;
+}
+#contato .form-group {
+    position: relative;
+}
+#contato .form-group span {
+    position: absolute;
+    height: 25px;
+    color: #999;
+    font-size: 1.2em;
+    padding: 4px 12px 0 15px;
+    margin: 15px 0;
+    border-right: 1px solid #ddd;
+}
+#contato .form-group input {
+    height: auto;
+    font-size: 1.1em;
+    padding: 15px 10px;
+    text-indent: 45px;
+}
+#contato .form-group textarea {
+    height: 200px;
+    font-size: 1.1em;
+    padding: 15px 20px;
+}
+#contato form .btn {
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 15px;
+}
+/* info */
+#contato .info {
+    /*text-align: center;*/
+    color: #777;
+    margin: 50px 0 0 0;
+}
+
+
+
+
+/* RODAPÉ */
+footer {
+    color: #999;
+    padding: 25px 0 100px;
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left bottom;
+}
+footer .social-media {
+    text-align: right;
+}
+footer .social-media a {
+    margin: 0 0 0 10px;
+    opacity: 0.9;
+}
+footer .social-media a:hover {
+    opacity: 1;
+}
+footer .social-media .facebook {
+    color: #6985bb;
+}
+footer .social-media .google-plus {
+    color: #d6605c;
+}
+footer .social-media .twitter {
+    color: #65a5c6;
+}
+footer .links a {
+    color: #555;
+    margin: 0 10px 0 0;
+}
+footer .links a:hover {
+    color: #000;
+}
+footer .links .btn-default {
+    color: #fff;
+    background-color: #555;
+    border-color: #555;
+    margin: 0 10px 0 0;
+}
+footer .links .btn-default:hover {
+    color: #fff;
+    background-color: #000;
+}
+footer .logo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/* Responsivo - Mobile First **************************************************************************************** */
+/* Tablets >= 768px */
+@media (min-width: 768px) {
+    #cover h1 img { width: 280px; }
+}
+/* Telas grandes >= 1200px */
+@media (min-width: 1200px) {
+    #cover h1 img { width: 320px; }
+}
+/* Telas um pouco grandes >= 1400px */
+@media (min-width: 1400px) {
+    #cover h1 img { width: 350px; }
+}
+/* Telas bem grandes >= 1900px */
+@media (min-width: 1900px) {
+    #cover h1 img { width: 380px; }
+}
+/* Telas bem grandes 2 >= 2500px */
+@media (min-width: 2500px) {
+    #cover h1 img { width: 450px; }
+}
